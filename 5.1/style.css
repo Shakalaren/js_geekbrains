@@ -1,0 +1,19 @@
+.board{
+    height: 30px;
+    width: 30px;
+    margin: 30px auto;
+}
+
+.block{
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+
+.black{
+    background: black;
+}
+
+.white{
+    background: white;
+}
