@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var obj = prompt('Введите число, которое будет не больше 999 включительно: ')
+    if (obj.length > 3) {
+        obj = prompt(`Вы ввели неверное число. Введите корректное число`)
+    }
+    var func = {
+        units: obj[2],
+        dozens: obj[1],
+        hundreds: obj[0],
+    };
+    if (obj.length === 2) {
+        func.hundreds = NaN
+        func.dozens = obj[0]
+        func.units = obj[1]
+    }
+    if (obj.length === 1) {
+        func.dozens = NaN
+        func.hundreds = NaN
+        func.units = obj[0]
+    }
+    console.log(func)
+
+</script>
+</body>
+</html>
