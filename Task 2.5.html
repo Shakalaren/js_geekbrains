@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Введите операцию (+, -, *, /")
+    let x = +prompt("Введите число x")
+    let y = +prompt("Введите число y")
+
+function summing (x, y) {
+    return(x + y)
+}
+function subtraction (x, y) {
+    return(x - y)
+}
+function multiplication (x, y) {
+    return(x * y)
+}
+function division(x, y) {
+    return(x / y)
+}
+
+    switch (a){
+        case "+":
+            result1 = summing(x, y)
+            alert(result1)
+            break
+
+        case "-":
+            result2 = subtraction(x, y)
+            alert(result2)
+            break
+        case "*":
+            result3 = multiplication(x, y)
+            alert(result3)
+            break
+        case "/":
+            result4 = division(x, y)
+            alert(result4)
+            break
+    }
+</script>
+</body>
+</html>
